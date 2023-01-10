@@ -44,9 +44,7 @@ To do this for a request in Postman:
 
 ## References
 
-This project was set up using the following tutorial: https://www.section.io/engineering-education/how-to-create-a-simple-rest-api-using-typescript-and-nodejs/
-
-Some additional tweaks were later added to this project.
+The base of the project was set up using [this tutorial](https://www.section.io/engineering-education/how-to-create-a-simple-rest-api-using-typescript-and-nodejs/).
 
 ## More information about the project
 
