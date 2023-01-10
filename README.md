@@ -33,7 +33,7 @@ To do this for a request in Postman:
 - Go to "Body"
 - Select "raw"
 - Select "JSON" from the dropdown
-- Add a JSON body, e.g. below.
+- Add a JSON body, e.g. below
 
 ```json
 {
