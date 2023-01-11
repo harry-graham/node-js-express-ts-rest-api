@@ -1,4 +1,5 @@
 # node-js-express-ts-rest-api
+
 A practice REST API built using TypeScript, Node.js and Express, following a tutorial.
 
 ## Setup
@@ -6,6 +7,7 @@ A practice REST API built using TypeScript, Node.js and Express, following a tut
 First, install Node.js and Postman on your machine.
 
 Next, install the necessary libraries:
+
 ```shell
 npm install typescript ts-node express morgan axios @types/express @types/morgan @types/axios nodemon
 ```
@@ -13,6 +15,7 @@ npm install typescript ts-node express morgan axios @types/express @types/morgan
 ## Running locally
 
 To start the development server locally:
+
 ```shell
 npm run dev
 ```
@@ -30,6 +33,7 @@ npm run dev
 Note: PUT and POST requests require a body containing the necessary information.
 
 To do this for a request in Postman:
+
 - Go to "Body"
 - Select "raw"
 - Select "JSON" from the dropdown
@@ -37,8 +41,8 @@ To do this for a request in Postman:
 
 ```json
 {
-    "title": "Test post",
-    "body": "Test post body"
+  "title": "Test post",
+  "body": "Test post body"
 }
 ```
 
@@ -49,6 +53,7 @@ The base of the project was set up using [this tutorial](https://www.section.io/
 ## More information about the project
 
 Node.js libraries used:
+
 - <b>TypeScript</b>: A TypeScript compiler with static set type definitions.
 - <b>Ts-node</b>: Allows us to run and configure Typescript execution environments.
 - <b>Express</b>: Node.js web application framework for setting and managing web-based server.

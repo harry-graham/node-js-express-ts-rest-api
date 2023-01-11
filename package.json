@@ -7,7 +7,8 @@
     "dev": "nodemon src/server.ts",
     "build": "rm -rf build/ && tsc",
     "compile-ts": "tsc -p tsconfig.json --noEmit",
-    "prettier": "prettier --check ."
+    "prettier": "prettier --check .",
+    "prettier:write": "prettier --write ."
   },
   "repository": {
     "type": "git",
