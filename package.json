@@ -5,7 +5,7 @@
   "main": "source/server.ts",
   "scripts": {
     "dev": "nodemon source/server.ts",
-    "build": "rm -rf build/ && prettier --write source/ && tsc",
+    "build": "rm -rf build/ && tsc",
     "compile-ts": "tsc -p tsconfig.json --noEmit",
     "prettier": "prettier --check ."
   },
