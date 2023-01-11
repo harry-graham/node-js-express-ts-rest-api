@@ -2,9 +2,9 @@
   "name": "node-js-express-ts-rest-api",
   "version": "1.0.0",
   "description": "A practice REST API built using TypeScript, Node.js and Express.",
-  "main": "source/server.ts",
+  "main": "src/server.ts",
   "scripts": {
-    "dev": "nodemon source/server.ts",
+    "dev": "nodemon src/server.ts",
     "build": "rm -rf build/ && tsc",
     "compile-ts": "tsc -p tsconfig.json --noEmit",
     "prettier": "prettier --check ."
