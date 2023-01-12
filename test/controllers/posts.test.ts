@@ -1,15 +1,18 @@
 import { rest } from "msw";
 import { setupServer } from "msw/node";
-import { getMockReq, getMockRes } from '@jest-mock/express'
+import { getMockReq, getMockRes } from "@jest-mock/express";
 
 import controller, { Post } from "../../src/controllers/posts";
 
 const post: Post = { userId: 2, id: 1, title: "Test title", body: "Test body" };
 
 const server = setupServer(
-  rest.get(`https://jsonplaceholder.typicode.com/posts/${post.id}`, (req, res, ctx) => {
-    return res(ctx.status(200), ctx.json(post));
-  })
+  rest.get(
+    `https://jsonplaceholder.typicode.com/posts/${post.id}`,
+    (req, res, ctx) => {
+      return res(ctx.status(200), ctx.json(post));
+    }
+  )
 );
 
 const { res, next, mockClear } = getMockRes();
