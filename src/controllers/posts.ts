@@ -22,13 +22,12 @@ const getPosts = async (req: Request, res: Response, next: NextFunction) => {
 
 // getting a single post
 const getPost = async (req: Request, res: Response, next: NextFunction) => {
-  // get the post id from the req
   let id: string = req.params.id;
-  // get the post
   let result: AxiosResponse = await axios.get(
     `https://jsonplaceholder.typicode.com/posts/${id}`
   );
   let post: Post = result.data;
+
   return res.status(200).json({
     message: post,
   });
@@ -89,3 +88,4 @@ const addPost = async (req: Request, res: Response, next: NextFunction) => {
 };
 
 export default { getPosts, getPost, updatePost, deletePost, addPost };
+export { Post };
