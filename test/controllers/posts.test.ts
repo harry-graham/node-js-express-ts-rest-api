@@ -9,7 +9,7 @@ const post: Post = { userId: 2, id: 1, title: "Test title", body: "Test body" };
 const server = setupServer(
   rest.get(
     `https://jsonplaceholder.typicode.com/posts/${post.id}`,
-    (req, res, ctx) => {
+    (_, res, ctx) => {
       return res(ctx.status(200), ctx.json(post));
     }
   )
