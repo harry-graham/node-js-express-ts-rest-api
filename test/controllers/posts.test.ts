@@ -4,7 +4,7 @@ import { post } from "../../mocks/controllers/posts";
 
 const { res, next, mockClear } = getMockRes();
 
-describe("Controller", () => {
+describe("Posts controller", () => {
   beforeEach(() => mockClear());
 
   describe("getPost", () => {
